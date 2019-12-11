@@ -303,25 +303,9 @@ template {
 [hidden] {
   display: none;
 }
-.header {
-  color: green;
-  font-size: 2rem;
-  text-align: center;
-  display: grid;
-  grid-template-areas: " . nav ." ". title ." ". button .";
+body {
+  background-color: white;
 }
-.header__nav {
-  grid-area: nav;
-}
-.header__list {
-  list-style: none;
-  display: flex;
-  width: 100%;
-}
-.header__list__item {
-  margin-left: 8%;
-}
-.landing {
-  grid-area: title;
-  border-bottom: 3px solid black;
+header {
+  background-color: black;
 }

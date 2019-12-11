@@ -1,0 +1,29 @@
+.header{
+    color:green;
+    font-size:@font--beta;
+    text-align:center;
+    display:grid;
+    grid-template-areas:
+        " . nav ."
+        ". title ."
+        ". button .";
+    &__nav{
+        grid-area:nav;
+        
+    }
+    &__list{
+        list-style:none;
+        display:flex;
+        width: 100%;
+        
+      &__item{
+          
+          margin-left:8%;
+      }
+    }
+}
+.landing{
+    grid-area:title;
+    border-bottom:3px solid black;
+    
+}
