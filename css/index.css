@@ -324,6 +324,13 @@ template {
     grid-template-areas: "nav nav nav" "title . ." ". button .";
   }
 }
+.header a {
+  color: #35477d;
+  text-decoration: none;
+}
+.header a:hover {
+  color: #ffc785;
+}
 .header__nav {
   border-bottom: 10px solid #ffc785;
   grid-area: nav;
@@ -393,6 +400,7 @@ template {
   grid-template-areas: "about about about" "skills skills skills" "cta cta cta" "footer footer footer";
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 @media only screen and (min-width: 1400px) {
   .main-content {
