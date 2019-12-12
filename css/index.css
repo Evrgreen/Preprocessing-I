@@ -321,7 +321,7 @@ template {
 }
 .header__list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   list-style: none;
   width: 100%;
 }
@@ -388,6 +388,7 @@ template {
   background-color: #ffc785;
   font-family: "Josefin Sans";
   grid-area: skills;
+  padding: 0;
 }
 .skills h2 {
   color: #35477d;
@@ -397,8 +398,9 @@ template {
 .skills__list {
   font-size: 4rem;
   display: flex;
+  flex-direction: column;
   list-style: none;
-  justify-content: space-between;
+  padding: 0;
   margin: 0;
 }
 .skills__item {
@@ -409,13 +411,17 @@ template {
   color: #7189bf;
   list-style: none;
   margin: 4rem auto;
-  padding: 1.5em 0;
-  width: 80%;
+  padding: 1.5rem 0;
+  width: 90%;
 }
 .cta {
   background-color: #35477d;
+  border-top: 5px solid #7189bf;
+  color: #7189bf;
   display: flex;
   flex-direction: column;
+  font-family: "Josefin Sans";
+  padding-top: 1rem;
 }
 .cta__socials {
   height: 10rem;
@@ -424,15 +430,21 @@ template {
 .cta .btn {
   color: #7189bf;
   background-color: #35477d;
-  margin: 0 2rem;
+  margin: 1.4rem 2rem;
   padding: 0.5rem 1.3rem;
 }
 .footer {
+  color: #ffc785;
   font-family: "Josefin Sans";
   font-size: 2rem;
   background-color: #7189bf;
+  padding: 1rem;
   text-align: left;
 }
 .footer p {
+  margin: 0;
+}
+* {
+  padding: 0;
   margin: 0;
 }

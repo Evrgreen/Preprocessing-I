@@ -306,3 +306,9 @@ template {
 body {
   color: black;
 }
+p{
+  font-size:.5em;
+}
+h1,h2,h3{
+  font-size:.5rem;
+}
