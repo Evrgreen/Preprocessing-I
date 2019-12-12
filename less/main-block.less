@@ -1,9 +1,9 @@
 .main-content{
-    
+    font-size:2rem;
    
     // grid for main content(about,skills,experience)
     display:grid;
-        grid-template-columns: 10% minmax(400px, 1fr) 10%;
+        grid-template-columns: 10% 1fr 10%;
         grid-template-areas: 
             "about about about"
             "skills skills skills"
@@ -12,12 +12,12 @@
             "footer footer footer";
         justify-content:center;
     text-align:center;
-    @media only screen and(min-width:1000px){
+    @media only screen and(min-width:1400px){
         grid-template-columns: 50% 50%;
 
         grid-template-areas: 
-        "about skills "
-
+        "about about "
+        "skills skills"
         "cta  cta"
         "footer  footer";
     }
@@ -33,7 +33,7 @@
     font-family:@font-primary;
     padding:3rem 1.5rem ;
     text-align:center;
-    @media only screen and (min-width:100px){
+    @media only screen and (min-width:1400px){
         font-size:3em;
         
     }
@@ -61,11 +61,15 @@
 
     .about__img{
         display:none;
-        @media only screen and(min-width:1000px){
+        @media only screen and(min-width:1400px){
             display:inline-block;
             box-shadow: 0 0 1rem .5rem @color--gamma;
             margin: 3rem 1rem;
             color:@color--gamma;
-       
+            width:50%;
+            max-width:100%;
+       & img{
+           width:95%;
+       }
     }
 }

@@ -1,6 +1,6 @@
 .header{
     background-color:@color--beta;
-    
+    height:100vh;
     color:@color--gamma;
     font-family:@font-secondary;
     font-size:@font--alpha;
@@ -11,7 +11,7 @@
         ". title ."
         ". button .";
 
-        @media only screen and (min-width: 1000px){
+        @media only screen and (min-width: 1400px){
             background: url(../images/landing.jpg) no-repeat  center/cover;
             grid-template-areas: 
             "nav nav nav"
@@ -21,6 +21,7 @@
     &__nav{
         border-bottom: 10px solid @color--alpha;
         grid-area:nav;
+        height:10vh;
         
         
     }
@@ -31,16 +32,17 @@
         list-style:none;
         width: 100%;
         
-        @media(min-width: 1000px){
+        @media(min-width: 1400px){
             justify-content:flex-end;
         }
 
       &__item{
-          color:@color--alpha;  
+          color:white;  
           margin-right:.8em;
           @media only screen and (min-width: 1000px){
-            color:@color--gamma;  
-            font-size:13rem;
+            color:white;  
+            font-size:4rem;
+            font-weight:800;
           }
       }
     }
@@ -54,14 +56,12 @@
         
         font-family:@font-primary;
         margin-bottom:.5rem;
-        @media only screen and (min-width: 1000px){
-            color:@color--alpha;
-            font-size:15rem;
-        }
+       
 
-        @media only screen and (min-width: 1000px){
+        @media only screen and (min-width: 1400px){
             align-self:start;
-            font-size:40rem;
+            color:@color--alpha;
+            font-size:10rem;
             margin:3rem 0;
 
             .landing__title--span{

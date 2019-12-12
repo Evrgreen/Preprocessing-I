@@ -306,13 +306,11 @@ template {
 :root {
   font-size: 62.5%;
 }
-@media only screen and (min-width: 1000px) {
-  :root {
-    font-size: 100%;
-  }
+@media only screen and (min-width: 1400px) {
 }
 .header {
   background-color: #7189bf;
+  height: 100vh;
   color: #35477d;
   font-family: "Sulphur Point";
   font-size: 4rem;
@@ -320,7 +318,7 @@ template {
   display: grid;
   grid-template-areas: " nav nav nav" ". title ." ". button .";
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1400px) {
   .header {
     background: url(../images/landing.jpg) no-repeat center / cover;
     grid-template-areas: "nav nav nav" "title . ." ". button .";
@@ -329,6 +327,7 @@ template {
 .header__nav {
   border-bottom: 10px solid #ffc785;
   grid-area: nav;
+  height: 10vh;
 }
 .header__list {
   display: flex;
@@ -336,19 +335,20 @@ template {
   list-style: none;
   width: 100%;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
   .header__list {
     justify-content: flex-end;
   }
 }
 .header__list__item {
-  color: #ffc785;
+  color: white;
   margin-right: 0.8em;
 }
 @media only screen and (min-width: 1000px) {
   .header__list__item {
-    color: #35477d;
-    font-size: 13rem;
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
   }
 }
 .landing {
@@ -359,16 +359,11 @@ template {
   font-family: "Josefin Sans";
   margin-bottom: 0.5rem;
 }
-@media only screen and (min-width: 1000px) {
-  .landing__title {
-    color: #ffc785;
-    font-size: 15rem;
-  }
-}
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1400px) {
   .landing__title {
     align-self: start;
-    font-size: 40rem;
+    color: #ffc785;
+    font-size: 10rem;
     margin: 3rem 0;
   }
   .landing__title .landing__title--span {
@@ -392,16 +387,17 @@ template {
   color: green;
 }
 .main-content {
+  font-size: 2rem;
   display: grid;
-  grid-template-columns: 10% minmax(400px, 1fr) 10%;
+  grid-template-columns: 10% 1fr 10%;
   grid-template-areas: "about about about" "skills skills skills" "cta cta cta" "footer footer footer";
   justify-content: center;
   text-align: center;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1400px) {
   .main-content {
     grid-template-columns: 50% 50%;
-    grid-template-areas: "about skills " "cta  cta" "footer  footer";
+    grid-template-areas: "about about " "skills skills" "cta  cta" "footer  footer";
   }
 }
 .about {
@@ -411,7 +407,7 @@ template {
   padding: 3rem 1.5rem;
   text-align: center;
 }
-@media only screen and (min-width: 100px) {
+@media only screen and (min-width: 1400px) {
   .about {
     font-size: 3em;
   }
@@ -433,12 +429,17 @@ template {
 .about__img {
   display: none;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1400px) {
   .about__img {
     display: inline-block;
     box-shadow: 0 0 1rem 0.5rem #35477d;
     margin: 3rem 1rem;
     color: #35477d;
+    width: 50%;
+    max-width: 100%;
+  }
+  .about__img img {
+    width: 95%;
   }
 }
 .skills {
@@ -447,7 +448,7 @@ template {
   grid-area: skills;
   padding: 0;
 }
-@media only screen and (min-width: 100px) {
+@media only screen and (min-width: 1400px) {
   .skills {
     border: 10px solid #35477d;
   }
@@ -472,22 +473,31 @@ template {
   border-radius: 1em;
   color: #7189bf;
   list-style: none;
+  min-height: 20rem;
+  height: auto;
   margin: 4rem auto;
   padding: 1.5rem 0;
-  width: 90%;
+  width: 80%;
+  min-width: 450px;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1400px) {
   .skills__item {
     height: 40vh;
     width: 45%;
   }
 }
-@media only screen and (min-width: 1000px) {
+.skills__title {
+  font-size: 3rem;
+}
+.card {
+  height: 10vh;
+}
+@media only screen and (min-width: 1400px) {
   .card {
-    font-size: 6rem;
+    font-size: 3rem;
   }
   .card h3 {
-    padding: 10% 0;
+    padding: 4% 0;
   }
   .card__text {
     padding: 5%;
@@ -502,7 +512,7 @@ template {
   font-family: "Josefin Sans";
   padding-top: 1rem;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1400px) {
   .cta {
     padding: 15rem;
   }
@@ -517,7 +527,7 @@ template {
   margin: 1.4rem 2rem;
   padding: 0.5rem 1.3rem;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1400px) {
   .cta .btn {
     margin: 3rem;
     padding: 2rem 6rem;

@@ -5,7 +5,7 @@
     padding:0;
 
 
-    @media only screen and (min-width:100px){
+    @media only screen and (min-width:1400px){
         border:10px solid @color--gamma;
     }
     h2{
@@ -23,6 +23,7 @@
         
         margin:0;
         
+        
     
         
 
@@ -35,23 +36,33 @@
         border-radius:1em;
         color:@color--beta;
         list-style:none;
+        min-height:20rem;
+        height:auto;
         margin: 4rem auto;
         padding:1.5rem 0;
-        width:90%;
-        @media only screen and(min-width: 1000px){
+        width:80%;
+        min-width:450px;
+        @media only screen and(min-width: 1400px){
             height:40vh;
             width:45%;
         }
 
     }
+    &__title{
+        font-size:3rem;
+    }
     
 }
 .card{
-    @media only screen and(min-width:1000px){
+
+   
+    height:10vh;
+    
+    @media only screen and(min-width:1400px){
         
-        font-size:6rem;
+        font-size:3rem;
         h3{
-            padding:10% 0;
+            padding:4% 0;
         }
      &__text{
          padding:5%;
