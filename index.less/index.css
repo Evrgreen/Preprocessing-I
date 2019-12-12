@@ -303,256 +303,55 @@ template {
 [hidden] {
   display: none;
 }
-:root {
-  font-size: 62.5%;
-}
-@media only screen and (min-width: 1400px) {
-}
 .header {
-  background-color: #7189bf;
-  height: 100vh;
-  color: #35477d;
-  font-family: "Sulphur Point";
-  font-size: 4rem;
+  color: green;
+  font-size: 2rem;
   text-align: center;
   display: grid;
-  grid-template-areas: " nav nav nav" ". title ." ". button .";
-}
-@media only screen and (min-width: 1400px) {
-  .header {
-    background: url(../images/landing.jpg) no-repeat center / cover;
-    grid-template-areas: "nav nav nav" "title . ." ". button .";
-  }
-}
-.header a {
-  color: #35477d;
-  text-decoration: none;
-}
-.header a:hover {
-  color: #ffc785;
+  grid-template-areas: " . nav ." ". title ." ". button .";
 }
 .header__nav {
-  border-bottom: 10px solid #ffc785;
   grid-area: nav;
-  height: 10vh;
 }
 .header__list {
-  display: flex;
-  justify-content: center;
   list-style: none;
+  display: flex;
   width: 100%;
 }
-@media (min-width: 1400px) {
-  .header__list {
-    justify-content: flex-end;
-  }
-}
 .header__list__item {
-  color: white;
-  margin-right: 0.8em;
-}
-@media only screen and (min-width: 1000px) {
-  .header__list__item {
-    color: white;
-    font-size: 4rem;
-    font-weight: 800;
-  }
+  margin-left: 8%;
 }
 .landing {
   grid-area: title;
-  border-bottom: 3px solid #ffc785;
-}
-.landing__title {
-  font-family: "Josefin Sans";
-  margin-bottom: 0.5rem;
-}
-@media only screen and (min-width: 1400px) {
-  .landing__title {
-    align-self: start;
-    color: #ffc785;
-    font-size: 10rem;
-    margin: 3rem 0;
-  }
-  .landing__title .landing__title--span {
-    color: #35477d !important;
-  }
-}
-.landing__title__sub {
-  display: none;
+  border-bottom: 3px solid black;
 }
 .btn {
-  background-color: #35477d;
-  color: #ffc785;
   border: 2px solid black;
-  border-radius: 1rem;
-  box-shadow: 0 0 0 6px #ffc785, 0 0 0 10px #35477d;
+  border-radius: 1em;
+  box-shadow: 0 0 0 6px white, 0 0 0 10px blue;
   padding: 1rem 4rem;
-  margin-bottom: 5rem;
+  margin: 1rem;
 }
 .btn:hover {
   background-color: brown;
   color: green;
 }
 .main-content {
-  font-size: 2rem;
+  border: solid 1px black;
   display: grid;
-  grid-template-columns: 10% 1fr 10%;
-  grid-template-areas: "about about about" "skills skills skills" "cta cta cta" "footer footer footer";
+  grid-template-areas: ". about ." ". skills ." ". experience .";
   justify-content: center;
   text-align: center;
-  width: 100%;
-}
-@media only screen and (min-width: 1400px) {
-  .main-content {
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "about about " "skills skills" "cta  cta" "footer  footer";
-  }
 }
 .about {
   grid-area: about;
-  background-color: #7189bf;
-  font-family: "Josefin Sans";
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
-@media only screen and (min-width: 1400px) {
-  .about {
-    font-size: 3em;
-  }
-}
-.about__title {
-  text-align: center;
-  color: #35477d;
-  padding: 0 1em;
-}
-.about__text {
-  color: #ffc785;
-}
-.cta {
-  grid-area: cta;
-}
-.footer {
-  grid-area: footer;
-}
-.about__img {
-  display: none;
-}
-@media only screen and (min-width: 1400px) {
-  .about__img {
-    display: inline-block;
-    box-shadow: 0 0 1rem 0.5rem #35477d;
-    margin: 3rem 1rem;
-    color: #35477d;
-    width: 50%;
-    max-width: 100%;
-  }
-  .about__img img {
-    width: 95%;
-  }
 }
 .skills {
-  background-color: #ffc785;
-  font-family: "Josefin Sans";
   grid-area: skills;
-  padding: 0;
 }
-@media only screen and (min-width: 1400px) {
-  .skills {
-    border: 10px solid #35477d;
-  }
+.experience {
+  grid-area: experience;
 }
-.skills h2 {
-  color: #35477d;
-  font-family: "Sulphur Point";
-  text-transform: uppercase;
-}
-.skills__list {
-  font-size: 4rem;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.skills__item {
-  background-color: #35477d;
-  box-shadow: 0 2px 0 3px rgba(48, 48, 48, 0.322);
-  border: 3px solid #7189bf;
-  border-radius: 1em;
-  color: #7189bf;
-  list-style: none;
-  min-height: 20rem;
-  height: auto;
-  margin: 4rem auto;
-  padding: 1.5rem 0;
-  width: 80%;
-  min-width: 450px;
-}
-@media only screen and (min-width: 1400px) {
-  .skills__item {
-    height: 40vh;
-    width: 45%;
-  }
-}
-.skills__title {
-  font-size: 3rem;
-}
-.card {
-  height: 10vh;
-}
-@media only screen and (min-width: 1400px) {
-  .card {
-    font-size: 3rem;
-  }
-  .card h3 {
-    padding: 4% 0;
-  }
-  .card__text {
-    padding: 5%;
-  }
-}
-.cta {
-  background-color: #35477d;
-  border-top: 5px solid #7189bf;
-  color: #7189bf;
-  display: flex;
-  flex-direction: column;
-  font-family: "Josefin Sans";
-  padding-top: 1rem;
-}
-@media only screen and (min-width: 1400px) {
-  .cta {
-    padding: 15rem;
-  }
-}
-.cta__socials {
-  height: 10rem;
-  background-color: #35477d;
-}
-.cta .btn {
-  color: #7189bf;
-  background-color: #35477d;
-  margin: 1.4rem 2rem;
-  padding: 0.5rem 1.3rem;
-}
-@media only screen and (min-width: 1400px) {
-  .cta .btn {
-    margin: 3rem;
-    padding: 2rem 6rem;
-  }
-}
-.footer {
-  color: #ffc785;
-  font-family: "Josefin Sans";
-  font-size: 2rem;
-  background-color: #7189bf;
-  padding: 1rem;
-  text-align: left;
-}
-.footer p {
-  margin: 0;
-}
-* {
-  padding: 0;
-  margin: 0;
+.about {
+  background-color: red;
 }

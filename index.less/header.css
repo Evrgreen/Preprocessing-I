@@ -1,0 +1,19 @@
+.header {
+  text-align: center;
+  display: grid;
+  grid-template-areas: " . nav ." ". title ." ". button .";
+}
+.header__nav {
+  grid-area: nav;
+}
+.header__list {
+  display: flex;
+  width: 100%;
+}
+.header__list__item {
+  background-color: red;
+  margin-left: 8%;
+}
+.landing {
+  grid-area: title;
+}

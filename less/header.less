@@ -1,0 +1,86 @@
+.header{
+    background-color:@color--beta;
+    height:100vh;
+    color:@color--gamma;
+    font-family:@font-secondary;
+    font-size:@font--alpha;
+    text-align:center;
+    display:grid;
+    grid-template-areas:
+        " nav nav nav"
+        ". title ."
+        ". button .";
+
+        @media only screen and (min-width: 1400px){
+            background: url(../images/landing.jpg) no-repeat  center/cover;
+            grid-template-areas: 
+            "nav nav nav"
+            "title . ."
+             ". button .";
+        }
+    a{  
+        color:@color--gamma;
+        text-decoration:none;
+        &:hover{
+            color:@color--alpha;
+        }
+    }
+    &__nav{
+        border-bottom: 10px solid @color--alpha;
+        grid-area:nav;
+        height:10vh;
+        
+        
+    }
+   
+    &__list{
+        display:flex;
+        justify-content:center;
+        list-style:none;
+        width: 100%;
+        
+        @media(min-width: 1400px){
+            justify-content:flex-end;
+        }
+
+      &__item{
+          color:white;  
+          margin-right:.8em;
+          @media only screen and (min-width: 1000px){
+            color:white;  
+            font-size:4rem;
+            font-weight:800;
+          }
+      }
+    }
+}
+.landing{
+    grid-area:title;
+    border-bottom:3px solid @color--alpha;
+    
+
+    &__title{
+        
+        font-family:@font-primary;
+        margin-bottom:.5rem;
+       
+
+        @media only screen and (min-width: 1400px){
+            align-self:start;
+            color:@color--alpha;
+            font-size:10rem;
+            margin:3rem 0;
+
+            .landing__title--span{
+                
+                color:@color--gamma !important;
+            }
+        }
+        &__sub{
+            display:none;
+            
+
+
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.skills{
+    background-color: @color--alpha;
+    font-family: @font-primary;
+    grid-area:skills;
+    padding:0;
+
+
+    @media only screen and (min-width:1400px){
+        border:10px solid @color--gamma;
+    }
+    h2{
+        color:@color--gamma;
+        font-family:@font-secondary;
+        text-transform:uppercase;
+    }
+    &__list{
+       
+        font-size:4rem;
+        display:flex;
+        flex-direction:column;
+        list-style:none;
+        padding:0;
+        
+        margin:0;
+        
+        
+    
+        
+
+
+    }
+    &__item{
+        background-color:@color--gamma;
+        box-shadow: 0 2px 0 3px rgba(48, 48, 48, 0.322);
+        border: 3px solid @color--beta;
+        border-radius:1em;
+        color:@color--beta;
+        list-style:none;
+        min-height:20rem;
+        height:auto;
+        margin: 4rem auto;
+        padding:1.5rem 0;
+        width:80%;
+        min-width:450px;
+        @media only screen and(min-width: 1400px){
+            height:40vh;
+            width:45%;
+        }
+
+    }
+    &__title{
+        font-size:3rem;
+    }
+    
+}
+.card{
+
+   
+    height:10vh;
+    
+    @media only screen and(min-width:1400px){
+        
+        font-size:3rem;
+        h3{
+            padding:4% 0;
+        }
+     &__text{
+         padding:5%;
+     }
+    }
+}

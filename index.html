@@ -4,16 +4,91 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
-
-  <link rel="stylesheet" href="css/index.css">
-
+  <title>Dedoich Paints</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/index.css">
+ <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Sulphur+Point&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/00e8724f0c.js" crossorigin="anonymous"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__list__item"><a href="index.html">Home</a></li>
+        <li class="header__list__item"><a href="#">About</a></li>
+        <li class="header__list__item"><a href="#">Portfolio</a></li>
+        <li class="header__list__item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="landing">
+      <h1 class="landing__title">Dedoich <span class="landing__title--span"> Paints</span></h1>
+      <h2 class="landing__title__sub">Self-taught Artist</h2>
+      <button class="btn btn-primary">Commision Me</button>
+    </section>
+  </header>
+  <!-- End of header    -->
+    <section class="main-content">
+      <article class="about">
+        <header class="about__header">
+          <h2 class="about__title">Experience</h2>
+        </header>
+        <p class="about__text">I have been an artist in both acrylic and oil paint for 3 years.</p>
+        <p class="about__text">Commercially sold 6 paintings and participated in one local art contest.</p>
+        <div class="about__img">
+          <p class="image__title">My Current commision.</p>
+          <img src="images/current__work.jpg" alt="">
+        </div>
+
+          
+      </article>
+      <!-- End of About Section -->
+      <section class="skills">
+        <header class="skills_header">
+          <h2 class="skills__title">skills</h2>
+        </header>
+        <ul class="skills_list">
+          <li class="skills__item">
+            <div class="card">
+              <header class="card__header">
+                <i class="fas fa-palette"></i>
+                <h3>Landscapes</h3>
+              </header>
+              <p class="card__text">bit of a specialty for me. I have painted over 20 landscapes.</p>
+            
+            </div>
+          </li>    
+          <li class="skills__item">
+              <div class="card">
+                <header>
+                    <i class="fas fa-paint-brush"></i>
+                  <h3>Portraits</h3>
+                </header>
+                <p>Newer to portraits but they are a passion for me. I've painted and sketched about 24 portraits all together.</p>
+                
+              </div>
+            </li>
+        </ul>
+      </section>
+      <!-- End of Skills Section -->
+     
+    <!-- End of Main Content  -->
+    <section class="cta">
+      <header class="cta__header">
+        <h2 class="cta__title">Let's get in touch.</h2>
+      </header>
+      <div class="cta__socials">
+        <button class="btn btn--primary">Commision</button>
+        <button class="btn btn--primary">Contact</button>
+      </div>
+    </section>
+    <!-- End of Call to action -->
+    <footer class="footer">
+      <p>Copy right stuff</p>
+    </footer>
+  
 </body>
 </html>
