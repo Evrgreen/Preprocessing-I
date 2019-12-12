@@ -1,5 +1,6 @@
 .header{
     background-color:@color--beta;
+    
     color:@color--gamma;
     font-family:@font-secondary;
     font-size:@font--alpha;
@@ -9,8 +10,16 @@
         " nav nav nav"
         ". title ."
         ". button .";
+
+        @media only screen and (min-width: 1000px){
+            background: url(../images/landing.jpg) no-repeat  center/cover;
+            grid-template-areas: 
+            "nav nav nav"
+            "title . ."
+             ". button .";
+        }
     &__nav{
-        border-bottom: 3px dotted @color--alpha;
+        border-bottom: 10px solid @color--alpha;
         grid-area:nav;
         
         
@@ -22,10 +31,17 @@
         list-style:none;
         width: 100%;
         
+        @media(min-width: 1000px){
+            justify-content:flex-end;
+        }
+
       &__item{
           color:@color--alpha;  
           margin-right:.8em;
-          
+          @media only screen and (min-width: 1000px){
+            color:@color--gamma;  
+            font-size:13rem;
+          }
       }
     }
 }
@@ -35,14 +51,28 @@
     
 
     &__title{
+        
         font-family:@font-primary;
         margin-bottom:.5rem;
-
-        &__sub{
+        @media only screen and (min-width: 1000px){
             color:@color--alpha;
-            margin-bottom:3rem;
-            font-size:@font--alpha;
-          
+            font-size:15rem;
+        }
+
+        @media only screen and (min-width: 1000px){
+            align-self:start;
+            font-size:40rem;
+            margin:3rem 0;
+
+            .landing__title--span{
+                
+                color:@color--gamma !important;
+            }
+        }
+        &__sub{
+            display:none;
+            
+
 
         }
     }

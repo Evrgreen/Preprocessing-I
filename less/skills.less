@@ -3,6 +3,11 @@
     font-family: @font-primary;
     grid-area:skills;
     padding:0;
+
+
+    @media only screen and (min-width:100px){
+        border:10px solid @color--gamma;
+    }
     h2{
         color:@color--gamma;
         font-family:@font-secondary;
@@ -33,7 +38,23 @@
         margin: 4rem auto;
         padding:1.5rem 0;
         width:90%;
+        @media only screen and(min-width: 1000px){
+            height:40vh;
+            width:45%;
+        }
 
     }
     
+}
+.card{
+    @media only screen and(min-width:1000px){
+        
+        font-size:6rem;
+        h3{
+            padding:10% 0;
+        }
+     &__text{
+         padding:5%;
+     }
+    }
 }

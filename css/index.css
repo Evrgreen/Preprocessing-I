@@ -306,17 +306,28 @@ template {
 :root {
   font-size: 62.5%;
 }
+@media only screen and (min-width: 1000px) {
+  :root {
+    font-size: 100%;
+  }
+}
 .header {
   background-color: #7189bf;
   color: #35477d;
   font-family: "Sulphur Point";
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   display: grid;
   grid-template-areas: " nav nav nav" ". title ." ". button .";
 }
+@media only screen and (min-width: 1000px) {
+  .header {
+    background: url(../images/landing.jpg) no-repeat center / cover;
+    grid-template-areas: "nav nav nav" "title . ." ". button .";
+  }
+}
 .header__nav {
-  border-bottom: 3px dotted #ffc785;
+  border-bottom: 10px solid #ffc785;
   grid-area: nav;
 }
 .header__list {
@@ -325,9 +336,20 @@ template {
   list-style: none;
   width: 100%;
 }
+@media (min-width: 1000px) {
+  .header__list {
+    justify-content: flex-end;
+  }
+}
 .header__list__item {
   color: #ffc785;
   margin-right: 0.8em;
+}
+@media only screen and (min-width: 1000px) {
+  .header__list__item {
+    color: #35477d;
+    font-size: 13rem;
+  }
 }
 .landing {
   grid-area: title;
@@ -337,10 +359,24 @@ template {
   font-family: "Josefin Sans";
   margin-bottom: 0.5rem;
 }
+@media only screen and (min-width: 1000px) {
+  .landing__title {
+    color: #ffc785;
+    font-size: 15rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .landing__title {
+    align-self: start;
+    font-size: 40rem;
+    margin: 3rem 0;
+  }
+  .landing__title .landing__title--span {
+    color: #35477d !important;
+  }
+}
 .landing__title__sub {
-  color: #ffc785;
-  margin-bottom: 3rem;
-  font-size: 3rem;
+  display: none;
 }
 .btn {
   background-color: #35477d;
@@ -356,12 +392,17 @@ template {
   color: green;
 }
 .main-content {
-  font-size: 4rem;
   display: grid;
-  grid-template-columns: 1fr minmax(auto, 2fr) 1fr;
+  grid-template-columns: 10% minmax(400px, 1fr) 10%;
   grid-template-areas: "about about about" "skills skills skills" "cta cta cta" "footer footer footer";
   justify-content: center;
   text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .main-content {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "about skills " "cta  cta" "footer  footer";
+  }
 }
 .about {
   grid-area: about;
@@ -369,6 +410,11 @@ template {
   font-family: "Josefin Sans";
   padding: 3rem 1.5rem;
   text-align: center;
+}
+@media only screen and (min-width: 100px) {
+  .about {
+    font-size: 3em;
+  }
 }
 .about__title {
   text-align: center;
@@ -384,11 +430,27 @@ template {
 .footer {
   grid-area: footer;
 }
+.about__img {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .about__img {
+    display: inline-block;
+    box-shadow: 0 0 1rem 0.5rem #35477d;
+    margin: 3rem 1rem;
+    color: #35477d;
+  }
+}
 .skills {
   background-color: #ffc785;
   font-family: "Josefin Sans";
   grid-area: skills;
   padding: 0;
+}
+@media only screen and (min-width: 100px) {
+  .skills {
+    border: 10px solid #35477d;
+  }
 }
 .skills h2 {
   color: #35477d;
@@ -414,6 +476,23 @@ template {
   padding: 1.5rem 0;
   width: 90%;
 }
+@media only screen and (min-width: 1000px) {
+  .skills__item {
+    height: 40vh;
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .card {
+    font-size: 6rem;
+  }
+  .card h3 {
+    padding: 10% 0;
+  }
+  .card__text {
+    padding: 5%;
+  }
+}
 .cta {
   background-color: #35477d;
   border-top: 5px solid #7189bf;
@@ -422,6 +501,11 @@ template {
   flex-direction: column;
   font-family: "Josefin Sans";
   padding-top: 1rem;
+}
+@media only screen and (min-width: 1000px) {
+  .cta {
+    padding: 15rem;
+  }
 }
 .cta__socials {
   height: 10rem;
@@ -432,6 +516,12 @@ template {
   background-color: #35477d;
   margin: 1.4rem 2rem;
   padding: 0.5rem 1.3rem;
+}
+@media only screen and (min-width: 1000px) {
+  .cta .btn {
+    margin: 3rem;
+    padding: 2rem 6rem;
+  }
 }
 .footer {
   color: #ffc785;

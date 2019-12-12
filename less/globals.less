@@ -351,13 +351,15 @@
 
 :root{
   font-size:62.50%;
-  
+    @media only screen and (min-width:1000px){
+      font-size:100%;
+    }
 }
 
 
 
-@font--alpha:3rem;
-@font--beta:2rem;
+@font--alpha:4rem;
+@font--beta:3rem;
 @font-gamma:.8rem;
 @font-primary: "Josefin Sans";
 @font-secondary: "Sulphur Point";
@@ -371,3 +373,4 @@
   color:@color--alpha;
 
 }
+
