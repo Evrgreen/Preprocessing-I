@@ -1,5 +1,6 @@
 .header{
     color:green;
+    font-family:@font-secondary;
     font-size:@font--beta;
     text-align:center;
     display:grid;
@@ -11,6 +12,7 @@
         grid-area:nav;
         
     }
+   
     &__list{
         list-style:none;
         display:flex;
@@ -18,7 +20,7 @@
         
       &__item{
           
-          margin-left:8%;
+          margin-left:2%;
       }
     }
 }
@@ -26,4 +28,16 @@
     grid-area:title;
     border-bottom:3px solid black;
     
+
+    &__title{
+        font-family:@font-primary;
+        margin-bottom:.5rem;
+
+        &__sub{
+            margin-bottom:3rem;
+            font-size:@font--beta;
+          
+
+        }
+    }
 }

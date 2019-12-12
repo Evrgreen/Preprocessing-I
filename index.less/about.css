@@ -303,87 +303,9 @@ template {
 [hidden] {
   display: none;
 }
-:root {
-  font-size: 62.5%;
-}
-.header {
-  color: green;
-  font-family: "Sulphur Point";
-  font-size: 2rem;
-  text-align: center;
-  display: grid;
-  grid-template-areas: " . nav ." ". title ." ". button .";
-}
-.header__nav {
-  grid-area: nav;
-}
-.header__list {
-  list-style: none;
-  display: flex;
-  width: 100%;
-}
-.header__list__item {
-  margin-left: 2%;
-}
-.landing {
-  grid-area: title;
-  border-bottom: 3px solid black;
-}
-.landing__title {
-  font-family: "Josefin Sans";
-  margin-bottom: 0.5rem;
-}
-.landing__title__sub {
-  margin-bottom: 3rem;
-  font-size: 2rem;
-}
-.btn {
-  border: 2px solid black;
-  border-radius: 1em;
-  box-shadow: 0 0 0 6px white, 0 0 0 10px blue;
-  padding: 1rem 4rem;
-  margin-bottom: 5rem;
-}
-.btn:hover {
-  background-color: brown;
-  color: green;
-}
-.main-content {
-  border: solid 1px black;
-  display: grid;
-  grid-template-columns: 1fr minmax(auto, 2fr) 1fr;
-  grid-template-areas: "about about about" ". skills ." "experience experience experience";
-  justify-content: center;
-  text-align: center;
-}
 .about {
-  grid-area: about;
-  background-color: red;
-  font-family: "Josefin Sans";
-  margin: 3rem 0;
-  width: 100%;
-}
-.skills {
-  grid-area: skills;
-}
-.skills__list {
-  font-size: 4rem;
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-}
-.skills .fa {
-  color: green;
-}
-.experience {
-  grid-area: experience;
-}
-.red {
-  color: #6c5b7b;
-}
-.about {
-  font-family: "Josefin Sans";
+  font-family: "lilita One";
   background-color: red;
   margin: 3rem 0;
-  width: 100%;
+  width: 50ch;
 }

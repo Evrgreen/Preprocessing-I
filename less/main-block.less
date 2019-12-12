@@ -1,0 +1,43 @@
+.main-content{
+    border:solid 1px black;
+    // grid for main content(about,skills,experience)
+    display:grid;
+        grid-template-columns: 1fr minmax(auto, 2fr) 1fr;
+        grid-template-areas: 
+            "about about about"
+            ". skills ."
+            "experience experience experience";
+        justify-content:center;
+    text-align:center;
+}
+.about{
+    grid-area:about;
+    background-color:red;
+    font-family:@font-primary;
+    margin:3rem 0;
+    width:100%;
+
+    
+}
+.skills{
+    grid-area:skills;
+    
+    &__list{
+        font-size:4rem;
+        display:flex;
+        list-style:none;
+        justify-content:space-between;
+    
+    }
+
+    .fa{
+        color:green;
+    }
+}
+.experience{
+    grid-area:experience;
+}
+
+.red{
+    color:@color--beta;
+}

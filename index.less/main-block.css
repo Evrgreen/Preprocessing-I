@@ -1,0 +1,17 @@
+.main-content {
+  border: solid 1px black;
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 2fr) 1fr;
+  grid-template-areas: "about about about" ". skills ." "experience experience experience";
+  justify-content: center;
+  text-align: center;
+}
+.about {
+  grid-area: about;
+}
+.skills {
+  grid-area: skills;
+}
+.experience {
+  grid-area: experience;
+}
