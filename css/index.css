@@ -346,7 +346,7 @@ template {
   background-color: #35477d;
   color: #ffc785;
   border: 2px solid black;
-  border-radius: 1em;
+  border-radius: 1rem;
   box-shadow: 0 0 0 6px #ffc785, 0 0 0 10px #35477d;
   padding: 1rem 4rem;
   margin-bottom: 5rem;
@@ -413,9 +413,26 @@ template {
   width: 80%;
 }
 .cta {
-  background-color: aqua;
+  background-color: #35477d;
   display: flex;
+  flex-direction: column;
 }
 .cta__socials {
-  background-color: aqua;
+  height: 10rem;
+  background-color: #35477d;
+}
+.cta .btn {
+  color: #7189bf;
+  background-color: #35477d;
+  margin: 0 2rem;
+  padding: 0.5rem 1.3rem;
+}
+.footer {
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+  background-color: #7189bf;
+  text-align: left;
+}
+.footer p {
+  margin: 0;
 }
