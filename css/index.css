@@ -359,7 +359,7 @@ template {
   font-size: 4rem;
   display: grid;
   grid-template-columns: 1fr minmax(auto, 2fr) 1fr;
-  grid-template-areas: "about about about" ". skills ." "experience experience experience";
+  grid-template-areas: "about about about" "skills skills skills" "cta cta cta" "footer footer footer";
   justify-content: center;
   text-align: center;
 }
@@ -378,21 +378,44 @@ template {
 .about__text {
   color: #ffc785;
 }
+.cta {
+  grid-area: cta;
+}
+.footer {
+  grid-area: footer;
+}
 .skills {
+  background-color: #ffc785;
+  font-family: "Josefin Sans";
   grid-area: skills;
+}
+.skills h2 {
+  color: #35477d;
+  font-family: "Sulphur Point";
+  text-transform: uppercase;
 }
 .skills__list {
   font-size: 4rem;
   display: flex;
   list-style: none;
   justify-content: space-between;
+  margin: 0;
 }
-.skills .fa {
-  color: green;
-}
-.experience {
-  grid-area: experience;
-}
-.red {
+.skills__item {
+  background-color: #35477d;
+  box-shadow: 0 2px 0 3px rgba(48, 48, 48, 0.322);
+  border: 3px solid #7189bf;
+  border-radius: 1em;
   color: #7189bf;
+  list-style: none;
+  margin: 4rem auto;
+  padding: 1.5em 0;
+  width: 80%;
+}
+.cta {
+  background-color: aqua;
+  display: flex;
+}
+.cta__socials {
+  background-color: aqua;
 }

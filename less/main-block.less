@@ -6,8 +6,10 @@
         grid-template-columns: 1fr minmax(auto, 2fr) 1fr;
         grid-template-areas: 
             "about about about"
-            ". skills ."
-            "experience experience experience";
+            "skills skills skills"
+           
+            "cta cta cta"
+            "footer footer footer";
         justify-content:center;
     text-align:center;
 }
@@ -36,25 +38,10 @@
 
     
 }
-.skills{
-    grid-area:skills;
-    
-    &__list{
-        font-size:4rem;
-        display:flex;
-        list-style:none;
-        justify-content:space-between;
-    
-    }
 
-    .fa{
-        color:green;
-    }
+.cta{
+    grid-area:cta;
 }
-.experience{
-    grid-area:experience;
-}
-
-.red{
-    color:@color--beta;
+.footer{
+    grid-area:footer;
 }
