@@ -307,40 +307,47 @@ template {
   font-size: 62.5%;
 }
 .header {
-  color: green;
+  background-color: #7189bf;
+  color: #35477d;
   font-family: "Sulphur Point";
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   display: grid;
-  grid-template-areas: " . nav ." ". title ." ". button .";
+  grid-template-areas: " nav nav nav" ". title ." ". button .";
 }
 .header__nav {
+  border-bottom: 3px dotted #ffc785;
   grid-area: nav;
 }
 .header__list {
-  list-style: none;
   display: flex;
+  justify-content: flex-start;
+  list-style: none;
   width: 100%;
 }
 .header__list__item {
-  margin-left: 2%;
+  color: #ffc785;
+  margin-right: 0.8em;
 }
 .landing {
   grid-area: title;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #ffc785;
 }
 .landing__title {
   font-family: "Josefin Sans";
   margin-bottom: 0.5rem;
 }
 .landing__title__sub {
+  color: #ffc785;
   margin-bottom: 3rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .btn {
+  background-color: #35477d;
+  color: #ffc785;
   border: 2px solid black;
   border-radius: 1em;
-  box-shadow: 0 0 0 6px white, 0 0 0 10px blue;
+  box-shadow: 0 0 0 6px #ffc785, 0 0 0 10px #35477d;
   padding: 1rem 4rem;
   margin-bottom: 5rem;
 }
@@ -349,7 +356,7 @@ template {
   color: green;
 }
 .main-content {
-  border: solid 1px black;
+  font-size: 4rem;
   display: grid;
   grid-template-columns: 1fr minmax(auto, 2fr) 1fr;
   grid-template-areas: "about about about" ". skills ." "experience experience experience";
@@ -358,10 +365,18 @@ template {
 }
 .about {
   grid-area: about;
-  background-color: red;
+  background-color: #7189bf;
   font-family: "Josefin Sans";
-  margin: 3rem 0;
-  width: 100%;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.about__title {
+  text-align: center;
+  color: #35477d;
+  padding: 0 1em;
+}
+.about__text {
+  color: #ffc785;
 }
 .skills {
   grid-area: skills;
@@ -379,11 +394,5 @@ template {
   grid-area: experience;
 }
 .red {
-  color: #6c5b7b;
-}
-.about {
-  font-family: "Josefin Sans";
-  background-color: red;
-  margin: 3rem 0;
-  width: 100%;
+  color: #7189bf;
 }

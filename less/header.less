@@ -1,32 +1,37 @@
 .header{
-    color:green;
+    background-color:@color--beta;
+    color:@color--gamma;
     font-family:@font-secondary;
-    font-size:@font--beta;
+    font-size:@font--alpha;
     text-align:center;
     display:grid;
     grid-template-areas:
-        " . nav ."
+        " nav nav nav"
         ". title ."
         ". button .";
     &__nav{
+        border-bottom: 3px dotted @color--alpha;
         grid-area:nav;
+        
         
     }
    
     &__list{
-        list-style:none;
         display:flex;
+        justify-content:flex-start;
+        list-style:none;
         width: 100%;
         
       &__item{
+          color:@color--alpha;  
+          margin-right:.8em;
           
-          margin-left:2%;
       }
     }
 }
 .landing{
     grid-area:title;
-    border-bottom:3px solid black;
+    border-bottom:3px solid @color--alpha;
     
 
     &__title{
@@ -34,8 +39,9 @@
         margin-bottom:.5rem;
 
         &__sub{
+            color:@color--alpha;
             margin-bottom:3rem;
-            font-size:@font--beta;
+            font-size:@font--alpha;
           
 
         }

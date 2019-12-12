@@ -1,5 +1,6 @@
 .main-content{
-    border:solid 1px black;
+    font-size:4rem;
+   
     // grid for main content(about,skills,experience)
     display:grid;
         grid-template-columns: 1fr minmax(auto, 2fr) 1fr;
@@ -11,11 +12,27 @@
     text-align:center;
 }
 .about{
+    // display:flex;
+    //     flex-flow: wrap column;
+
+        
+
     grid-area:about;
-    background-color:red;
+    background-color:@color--beta;
     font-family:@font-primary;
-    margin:3rem 0;
-    width:100%;
+    padding:3rem 1.5rem ;
+    text-align:center;
+    
+    &__title{
+        text-align:center;
+        color:@color--gamma;
+        padding: 0 1em;
+    }
+
+    &__text{
+        color:@color--alpha;
+        
+    }
 
     
 }
